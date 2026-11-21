@@ -1,0 +1,16 @@
+﻿SecurityId,CounterpartyId,IsEligible,Haircut
+FR001,CP_001,true,0.02
+DE001,CP_001,true,0.03
+CORP1,CP_001,true,0.05
+CORP2,CP_001,false,0.06
+EQ001,CP_001,true,0.1
+FR001,CP_002,true,0.025
+DE001,CP_002,true,0.035
+CORP1,CP_002,false,0.055
+CORP2,CP_002,true,0.065
+EQ001,CP_002,false,0.11
+FR001,CP_003,true,0.02
+DE001,CP_003,true,0.03
+CORP1,CP_003,true,0.05
+CORP2,CP_003,true,0.06
+EQ001,CP_003,true,0.1

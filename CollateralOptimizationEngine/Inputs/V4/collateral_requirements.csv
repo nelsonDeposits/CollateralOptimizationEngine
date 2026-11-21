@@ -1,0 +1,4 @@
+﻿CollateralId,CounterpartyId,CollateralValue,DurationDays
+REQ_001,CP_001,7000000,30
+REQ_002,CP_002,5000000,15
+REQ_003,CP_003,3000000,30

@@ -1,0 +1,6 @@
+﻿SecurityId,SecurityType,MarketValue,EconomicCost
+FR001,Government Bond,6000000,0.001
+DE001,Government Bond,5000000,0.0007
+CORP1,Corporate Bond,4000000,0.0005
+CORP2,Corporate Bond,3000000,0.0004
+EQ001,Equity,5000000,0.0002

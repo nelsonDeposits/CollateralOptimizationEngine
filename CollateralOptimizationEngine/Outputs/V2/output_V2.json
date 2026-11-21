@@ -1,0 +1,162 @@
+[
+  {
+    "CollateralRequirement": {
+      "CollateralId": "REQ_001",
+      "CollateralValue": 7000000,
+      "Counterparty": {
+        "CounterpartyId": "CP_001",
+        "EligibleSecurities": {
+          "FR001": 0.02,
+          "DE001": 0.03,
+          "CORP1": 0.05,
+          "EQ001": 0.1
+        }
+      },
+      "Currency": "EUR",
+      "DurationDays": 30
+    },
+    "AllocationStatus": {
+      "Status": "SATISFIED",
+      "RequiredCollateral": 7000000,
+      "AllocatedCollateral": 7000000,
+      "RemainingRequirement": 0
+    },
+    "Allocations": {
+      "FR001": 0,
+      "DE001": 0,
+      "CORP1": 2631578.947368421,
+      "EQ001": 5000000
+    },
+    "UpdatedInventory": {
+      "Securities": [
+        {
+          "SecurityId": "FR001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 6000000,
+          "Currency": "EUR",
+          "EconomicCost": 0.001
+        },
+        {
+          "SecurityId": "DE001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "CORP1",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 1368421.0526315789,
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CORP2",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3000000,
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        }
+      ]
+    }
+  },
+  {
+    "CollateralRequirement": {
+      "CollateralId": "REQ_002",
+      "CollateralValue": 5000000,
+      "Counterparty": {
+        "CounterpartyId": "CP_002",
+        "EligibleSecurities": {
+          "FR001": 0.025,
+          "DE001": 0.035,
+          "CORP2": 0.065
+        }
+      },
+      "Currency": "EUR",
+      "DurationDays": 15
+    },
+    "AllocationStatus": {
+      "Status": "SATISFIED",
+      "RequiredCollateral": 5000000,
+      "AllocatedCollateral": 5000000,
+      "RemainingRequirement": 0
+    },
+    "Allocations": {
+      "FR001": 0,
+      "DE001": 2274611.398963731,
+      "CORP2": 3000000
+    },
+    "UpdatedInventory": {
+      "Securities": [
+        {
+          "SecurityId": "FR001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 6000000,
+          "Currency": "EUR",
+          "EconomicCost": 0.001
+        },
+        {
+          "SecurityId": "DE001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 2725388.601036269,
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "CORP1",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 1368421.0526315789,
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        }
+      ]
+    }
+  },
+  {
+    "CollateralRequirement": {
+      "CollateralId": "REQ_003",
+      "CollateralValue": 3000000,
+      "Counterparty": {
+        "CounterpartyId": "CP_003",
+        "EligibleSecurities": {
+          "FR001": 0.02,
+          "DE001": 0.03,
+          "CORP1": 0.05,
+          "CORP2": 0.06,
+          "EQ001": 0.1
+        }
+      },
+      "Currency": "EUR",
+      "DurationDays": 30
+    },
+    "AllocationStatus": {
+      "Status": "SATISFIED",
+      "RequiredCollateral": 3000000,
+      "AllocatedCollateral": 3000000,
+      "RemainingRequirement": 0
+    },
+    "Allocations": {
+      "FR001": 0,
+      "DE001": 1752577.3195876293,
+      "CORP1": 1368421.0526315789
+    },
+    "UpdatedInventory": {
+      "Securities": [
+        {
+          "SecurityId": "FR001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 6000000,
+          "Currency": "EUR",
+          "EconomicCost": 0.001
+        },
+        {
+          "SecurityId": "DE001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 972811.2814486399,
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        }
+      ]
+    }
+  }
+]

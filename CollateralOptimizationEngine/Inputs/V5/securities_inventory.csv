@@ -1,0 +1,6 @@
+﻿SecurityId,SecurityType,IssuerId,AssetClass,QuantityAvailable,MarketValue,Haircut,EconomicCost
+FR001,Government Bond,FR_GOV,Sovereign,60000,6000000,0.02,0.001
+DE001,Government Bond,DE_GOV,Sovereign,50000,5000000,0.03,0.0007
+CORP1,Corporate Bond,ISSUER_A,Corporate,40000,4000000,0.05,0.0005
+CORP2,Corporate Bond,ISSUER_B,Corporate,30000,3000000,0.06,0.0004
+EQ001,Equity,ISSUER_C,Equity,100000,5000000,0.1,0.0002

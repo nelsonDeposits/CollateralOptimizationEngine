@@ -1,0 +1,43 @@
+{
+  "Allocations": {
+    "FR001": 0,
+    "DE001": 0,
+    "CORP1": 2821052.6315789474,
+    "CORP2": 3000000,
+    "EQ001": 5000000
+  },
+  "UpdatedInventory": {
+    "Securities": [
+      {
+        "SecurityId": "FR001",
+        "SecurityType": "Government Bond",
+        "MarketValue": 6000000,
+        "Currency": "EUR",
+        "Haircut": 0.02,
+        "EconomicCost": 0.001
+      },
+      {
+        "SecurityId": "DE001",
+        "SecurityType": "Government Bond",
+        "MarketValue": 5000000,
+        "Currency": "EUR",
+        "Haircut": 0.03,
+        "EconomicCost": 0.0007
+      },
+      {
+        "SecurityId": "CORP1",
+        "SecurityType": "Corporate Bond",
+        "MarketValue": 1178947.3684210526,
+        "Currency": "EUR",
+        "Haircut": 0.05,
+        "EconomicCost": 0.0005
+      }
+    ]
+  },
+  "CollateralRequirement": {
+    "CollateralId": "REQ_001",
+    "CollateralValue": 10000000,
+    "Currency": "EUR",
+    "DurationDays": 30
+  }
+}
