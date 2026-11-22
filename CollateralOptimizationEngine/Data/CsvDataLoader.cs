@@ -10,7 +10,7 @@ namespace CollateralOptimizationEngine;
 
 internal static class CsvDataLoader
 {
-    public static SecurityInventory LoadSecurities(string fileNameCsv)
+    public static SecurityInventory LoadSecurities(string securitiesFileCsv)
     {
         CsvConfiguration configuration = new CsvConfiguration(
             CultureInfo.InvariantCulture)
@@ -19,7 +19,7 @@ internal static class CsvDataLoader
             HasHeaderRecord = true
         };
 
-        using StreamReader reader = new StreamReader(fileNameCsv);
+        using StreamReader reader = new StreamReader(securitiesFileCsv);
         using CsvReader csvReader = new CsvReader(reader, configuration);
 
         SecurityInventory inventory = new SecurityInventory();
@@ -30,6 +30,7 @@ internal static class CsvDataLoader
                 (string)row.SecurityId,
                 (string)row.SecurityType,
                 double.Parse((string)row.MarketValue, CultureInfo.InvariantCulture),
+                (string)row.AssetClass,
                 double.Parse((string)row.EconomicCost, CultureInfo.InvariantCulture)
             );
             inventory.AddSecurity(security);
@@ -38,7 +39,7 @@ internal static class CsvDataLoader
         return inventory;
     }
     
-    public static List<Counterparty> LoadCounterparties(string fileNameCsv)
+    public static List<Counterparty> LoadCounterparties(string counterpartiesFileCsv)
     {
         CsvConfiguration configuration = new CsvConfiguration(
             CultureInfo.InvariantCulture)
@@ -47,7 +48,7 @@ internal static class CsvDataLoader
             HasHeaderRecord = true
         };
 
-        using StreamReader reader = new StreamReader(fileNameCsv);
+        using StreamReader reader = new StreamReader(counterpartiesFileCsv);
         using CsvReader csvReader = new CsvReader(reader, configuration);
         
         List<Counterparty> counterparties = csvReader.GetRecords<dynamic>()
@@ -89,15 +90,37 @@ internal static class CsvDataLoader
             );
             
         }
-        
-        /*List<CollateralRequirement> requirements = csvReader
-            .GetRecords<CollateralRequirement>()
-            .Select(r => new CollateralRequirement(
-                r.CollateralId, r.CollateralValue, r.CounterpartyId, r.DurationDays))
-            .ToList();*/
 
         return requirements;
     }
     
+    public static ConcentrationLimits LoadConcentrationLimits(string concentrationLimitsFileCsv)
+    {
+        CsvConfiguration configuration = new CsvConfiguration(
+            CultureInfo.InvariantCulture)
+        {
+            Delimiter = ",",
+            HasHeaderRecord = true
+        };
+
+        using StreamReader reader = new StreamReader(concentrationLimitsFileCsv);
+        using CsvReader csvReader = new CsvReader(reader, configuration);
+        csvReader.Read();
+        csvReader.ReadHeader();
+        
+        var limitIds = new List<string>();
+        var assetClasses = new List<string>();
+        var maxMarketValues = new List<double>();
+
+        while (csvReader.Read())
+        {
+            limitIds.Add(csvReader.GetField("LimitId")!);
+            assetClasses.Add(csvReader.GetField("AssetClass")!);
+            maxMarketValues.Add(csvReader.GetField<double>("MaxMarketValue"));
+        }
+
+        return new ConcentrationLimits(limitIds, assetClasses, maxMarketValues);
+    }
+
     
 }

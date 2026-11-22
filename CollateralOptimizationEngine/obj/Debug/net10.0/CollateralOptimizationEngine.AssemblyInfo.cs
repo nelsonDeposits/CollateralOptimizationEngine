@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CollateralOptimizationEngine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e582b13ec6560446fba83a5fa7bda381a29405dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("CollateralOptimizationEngine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CollateralOptimizationEngine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

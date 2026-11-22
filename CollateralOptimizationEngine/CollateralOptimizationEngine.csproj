@@ -15,6 +15,7 @@
     <ItemGroup>
       <Folder Include="Outputs\V1\" />
       <Folder Include="Outputs\V2\" />
+      <Folder Include="Outputs\V3\" />
     </ItemGroup>
 
 </Project>

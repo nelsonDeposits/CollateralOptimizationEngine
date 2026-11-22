@@ -8,7 +8,7 @@ namespace CollateralOptimizationEngine;
 
 public class OptimizationEngine
 {
-    public static Output? Solver(SecurityInventory inventory, CollateralRequirement collateralRequirement)
+    public static Output? Solver(SecurityInventory inventory, CollateralRequirement collateralRequirement, ConcentrationLimits concentrationLimits)
     {
         Solver solver = Google.OrTools.LinearSolver.Solver.CreateSolver("CBC");
 
@@ -23,15 +23,8 @@ public class OptimizationEngine
             .ToList());
         
         List<string> securityIds = eligibleInventory.GetSecurityIds(); 
+        List<string> assetClasses = eligibleInventory.GetAssetClasses(); 
         List<double> marketValues = eligibleInventory.GetMarketValues(); // Q_i
-        
-        /*List<double> marketValues = inventory.Securities.Where(s => securityIds.Contains(s.SecurityId)).Select(s => s.MarketValue).ToList(); // Q_i
-
-        Dictionary<String, Double> marketValues = securityIds.Zip(inventory.Securities.Where(s => securityIds.Contains(s.SecurityId)).Select(s => s.MarketValue).ToList(), (id, sol) => (id, sol)).ToDictionary(k => k.id, v => v.sol);
-
-        Dictionary<string, double> marketValues = inventory.Securities
-            .Where(s => counterparty.EligibleSecurities.ContainsKey(s.SecurityId))
-            .ToDictionary(s => s.SecurityId, s => s.MarketValue);*/
         
         List<double> costs = eligibleInventory.GetEconomicCosts(durationsDays); // c_i
         List<double> haircuts = counterparty.EligibleSecurities.Values.ToList(); // h_i
@@ -51,6 +44,20 @@ public class OptimizationEngine
             objective.SetCoefficient(x[i], costs[i]);
             collateralConstraint.SetCoefficient(x[i], 1.0 - haircuts[i]);
             solver.Add(x[i] <= marketValues[i]);
+        }
+        
+        //Contraintes de concentrations
+        foreach (var (assetClass, maxValue) in concentrationLimits.AssetClasses.Zip(concentrationLimits.MaxMarketValues))
+        {
+            Constraint concentrationConstraint = solver.MakeConstraint(0.0,maxValue, $"concentrationConstraint{assetClass}");
+            for (int i = 0; i < n; i++)
+            {
+                if (assetClasses[i] == assetClass)
+                {
+                    concentrationConstraint.SetCoefficient(x[i], 1.0 );
+                }
+                
+            }
         }
 
         objective.SetMinimization();

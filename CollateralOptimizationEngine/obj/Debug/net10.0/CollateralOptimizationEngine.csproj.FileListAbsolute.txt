@@ -856,3 +856,4 @@
 /home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/obj/Debug/net10.0/CollateralOptimizationEngine.pdb
 /home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/obj/Debug/net10.0/CollateralOptimizationEngine.genruntimeconfig.cache
 /home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/obj/Debug/net10.0/ref/CollateralOptimizationEngine.dll
+/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/obj/Debug/net10.0/CollateralOptimizationEngine.sourcelink.json

@@ -1,4 +1,7 @@
-﻿LimitId,GroupType,GroupId,MaxMarketValue
-LIM_001,ISSUER,FR_GOV,5000000
-LIM_002,ASSET_CLASS,Equity,3000000
-LIM_003,ASSET_CLASS,Corporate,6000000
+LimitId,AssetClass,MaxMarketValue
+LIM_001,Sovereign,18000000
+LIM_002,Corporate,10000000
+LIM_003,Equity,7000000
+LIM_004,Covered Bond,12000000
+LIM_005,Supranational,10000000
+LIM_006,Agency,9000000

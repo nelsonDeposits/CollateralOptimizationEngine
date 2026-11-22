@@ -29,6 +29,10 @@ public class SecurityInventory
     {
         return Securities.Select(s => s.SecurityId).ToList();
     }
+    public List<String> GetAssetClasses()
+    {
+        return Securities.Select(s => s.AssetClass).ToList();
+    }
     public List<double> GetEconomicCosts(int durationsDays)
     {
         return Securities.Select(s => s.EconomicCost * durationsDays / 360.0).ToList();
@@ -51,9 +55,7 @@ public class SecurityInventory
 
             if (allocations.TryGetValue(s.SecurityId, out double alloc))
                 newValue -= alloc;
-
-            if (newValue > 1e-9)
-                updated.Add(new Security(s.SecurityId, s.SecurityType, newValue, s.EconomicCost));
+                updated.Add(new Security(s.SecurityId, s.SecurityType, newValue, s.AssetClass,s.EconomicCost));
         }
 
         return new SecurityInventory(updated);

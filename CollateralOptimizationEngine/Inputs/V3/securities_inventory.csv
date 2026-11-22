@@ -1,6 +1,31 @@
-﻿SecurityId,SecurityType,IssuerId,AssetClass,MarketValue,Haircut,EconomicCost
-FR001,Government Bond,FR_GOV,Sovereign,6000000,0.02,0.001
-DE001,Government Bond,DE_GOV,Sovereign,5000000,0.03,0.0007
-CORP1,Corporate Bond,ISSUER_A,Corporate,4000000,0.05,0.0005
-CORP2,Corporate Bond,ISSUER_B,Corporate,3000000,0.06,0.0004
-EQ001,Equity,ISSUER_C,Equity,5000000,0.1,0.0002
+SecurityId,SecurityType,AssetClass,MarketValue,EconomicCost
+FR001,Government Bond,Sovereign,6000000,0.0010
+FR002,Government Bond,Sovereign,5000000,0.0008
+DE001,Government Bond,Sovereign,7000000,0.0007
+DE002,Government Bond,Sovereign,4000000,0.0009
+IT001,Government Bond,Sovereign,5000000,0.0012
+ES001,Government Bond,Sovereign,3500000,0.0011
+CORP1,Corporate Bond,Corporate,4000000,0.0005
+CORP2,Corporate Bond,Corporate,3000000,0.0004
+CORP3,Corporate Bond,Corporate,5000000,0.0006
+CORP4,Corporate Bond,Corporate,2500000,0.0007
+CORP5,Corporate Bond,Corporate,3500000,0.0008
+CORP6,Corporate Bond,Corporate,4500000,0.0009
+EQ001,Common Stock,Equity,4000000,0.0002
+EQ002,Common Stock,Equity,3000000,0.0003
+EQ003,Common Stock,Equity,2500000,0.0004
+EQ004,Common Stock,Equity,3500000,0.0005
+EQ005,Common Stock,Equity,2000000,0.0003
+CB001,Covered Bond,Covered Bond,5000000,0.00045
+CB002,Covered Bond,Covered Bond,4000000,0.00050
+CB003,Covered Bond,Covered Bond,3500000,0.00055
+CB004,Covered Bond,Covered Bond,3000000,0.00060
+CB005,Covered Bond,Covered Bond,4500000,0.00048
+SUP001,Supranational Bond,Supranational,6000000,0.00035
+SUP002,Supranational Bond,Supranational,5000000,0.00040
+SUP003,Supranational Bond,Supranational,4000000,0.00038
+SUP004,Supranational Bond,Supranational,3500000,0.00042
+AG001,Agency Bond,Agency,4500000,0.00045
+AG002,Agency Bond,Agency,3500000,0.00050
+AG003,Agency Bond,Agency,3000000,0.00055
+AG004,Agency Bond,Agency,5000000,0.00048

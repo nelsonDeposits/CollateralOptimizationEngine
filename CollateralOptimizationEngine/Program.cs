@@ -9,25 +9,28 @@ class Program
     {
 
         string securitiesFilePath =
-            "/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/Inputs/V2/securities_inventory.csv";
+            "/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/Inputs/V3/securities_inventory.csv";
         string collateralReqFilePath =
-            "/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/Inputs/V2/collateral_requirements.csv";
+            "/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/Inputs/V3/collateral_requirements.csv";
         string counterpartiesFilePath =
-            "/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/Inputs/V2/collateral_eligibility.csv";
+            "/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/Inputs/V3/collateral_eligibility.csv";
+        string concentrationLimitsFileCsv =
+            "/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/Inputs/V3/concentration_limits.csv";
 
             
         
         
         SecurityInventory inventory = CsvDataLoader.LoadSecurities(securitiesFilePath);
-        List<Counterparty> counterparties = CsvDataLoader.LoadCounterparties(counterpartiesFilePath);
+        
         List<CollateralRequirement> collateralRequirements = CsvDataLoader.LoadRequirements(collateralReqFilePath, counterpartiesFilePath);
         //CollateralRequirement collateral = collateralRequirements.First();
+        ConcentrationLimits concentrationLimits = CsvDataLoader.LoadConcentrationLimits(concentrationLimitsFileCsv);
 
         
         List<Output> outputs = new List<Output>();
         foreach (CollateralRequirement collateral in collateralRequirements)
         {
-            Output output = OptimizationEngine.Solver(inventory, collateral);
+            Output output = OptimizationEngine.Solver(inventory, collateral, concentrationLimits);
             outputs.Add(output);
             inventory = output.UpdatedInventory; 
         }
@@ -35,26 +38,11 @@ class Program
         
         
         
-        
+        //Output output = OptimizationEngine.Solver(inventory, collateral, concentrationLimits);
         var options = new JsonSerializerOptions { WriteIndented = true };
         string json = JsonSerializer.Serialize(outputs, options);
-        File.WriteAllText("/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/Outputs/V2/output_V2.json", json);
-        /*
-        output = OptimizationEngine.Solver(inventory, collateral);
-        options = new JsonSerializerOptions { WriteIndented = true };
-        json = JsonSerializer.Serialize(output, options);
-        File.WriteAllText("/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/Outputs/V1/output_V1.1.json", json);
-
-        output = OptimizationEngine.Solver(inventory, collateral);
-        options = new JsonSerializerOptions { WriteIndented = true };
-        json = JsonSerializer.Serialize(output, options);
-        File.WriteAllText("/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/Outputs/V1/output_V1.2.json", json);
+        File.WriteAllText("/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/Outputs/V3/output_V3.json", json);
         
-        output = OptimizationEngine.Solver(inventory, collateral);
-        options = new JsonSerializerOptions { WriteIndented = true };
-        json = JsonSerializer.Serialize(output, options);
-        File.WriteAllText("/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/Outputs/V1/output_V1.3.json", json);
-        */
     }
 
 }
