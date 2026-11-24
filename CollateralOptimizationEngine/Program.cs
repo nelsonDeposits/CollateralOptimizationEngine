@@ -7,42 +7,30 @@ class Program
 {
     static void Main(string[] args)
     {
-
-        string securitiesFilePath =
-            "/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/Inputs/V3/securities_inventory.csv";
-        string collateralReqFilePath =
-            "/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/Inputs/V3/collateral_requirements.csv";
-        string counterpartiesFilePath =
-            "/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/Inputs/V3/collateral_eligibility.csv";
-        string concentrationLimitsFileCsv =
-            "/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/Inputs/V3/concentration_limits.csv";
-
-            
+        OptimizationVersion version = OptimizationVersion.V4;
         
+        string rootPath = "/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine";
         
-        SecurityInventory inventory = CsvDataLoader.LoadSecurities(securitiesFilePath);
+        string inputFolder = Path.Combine(rootPath, "Inputs");
+        Input input = InputLoader.Load(version, inputFolder);
         
-        List<CollateralRequirement> collateralRequirements = CsvDataLoader.LoadRequirements(collateralReqFilePath, counterpartiesFilePath);
-        //CollateralRequirement collateral = collateralRequirements.First();
-        ConcentrationLimits concentrationLimits = CsvDataLoader.LoadConcentrationLimits(concentrationLimitsFileCsv);
-
-        
-        List<Output> outputs = new List<Output>();
-        foreach (CollateralRequirement collateral in collateralRequirements)
+        List<Output> outputs = OptimizationEngine.Run(version, input);
+        Double totalCost = 0.0;
+        foreach (Output output in outputs)
         {
-            Output output = OptimizationEngine.Solver(inventory, collateral, concentrationLimits);
-            outputs.Add(output);
-            inventory = output.UpdatedInventory; 
+            totalCost += output.TotalEconomicCost;
         }
-
         
+        Console.WriteLine($"Version : {version}, Total Economic Cost: {totalCost}");
         
-        
-        //Output output = OptimizationEngine.Solver(inventory, collateral, concentrationLimits);
         var options = new JsonSerializerOptions { WriteIndented = true };
         string json = JsonSerializer.Serialize(outputs, options);
-        File.WriteAllText("/home/noslen/CDI/Projects/CollateralOptimizationEngine/CollateralOptimizationEngine/Outputs/V3/output_V3.json", json);
         
+        string outputFolder = Path.Combine(rootPath, "Outputs", version.ToString());
+        string outputFile = Path.Combine(outputFolder, $"output_{version}.json");
+        File.WriteAllText(outputFile, json);
+        
+
     }
 
 }

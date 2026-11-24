@@ -55,7 +55,7 @@ public class SecurityInventory
 
             if (allocations.TryGetValue(s.SecurityId, out double alloc))
                 newValue -= alloc;
-                updated.Add(new Security(s.SecurityId, s.SecurityType, newValue, s.AssetClass,s.EconomicCost));
+                updated.Add(new Security(s.SecurityId, s.SecurityType, newValue, s.EconomicCost, s.AssetClass));
         }
 
         return new SecurityInventory(updated);

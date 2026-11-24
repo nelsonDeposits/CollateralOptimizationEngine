@@ -21,22 +21,54 @@ internal static class CsvDataLoader
 
         using StreamReader reader = new StreamReader(securitiesFileCsv);
         using CsvReader csvReader = new CsvReader(reader, configuration);
+        
+        csvReader.Read();
+        csvReader.ReadHeader();
 
         SecurityInventory inventory = new SecurityInventory();
+        
+        bool hasAssetClassColumn = csvReader.HeaderRecord?.Contains("AssetClass", StringComparer.OrdinalIgnoreCase) == true;
 
         foreach (var row in csvReader.GetRecords<dynamic>())
-        {
+        { 
+            String assetClass = null;
+            if (hasAssetClassColumn)
+            {
+                assetClass = (string)row.AssetClass;
+            }
             Security security = new Security(
                 (string)row.SecurityId,
                 (string)row.SecurityType,
                 double.Parse((string)row.MarketValue, CultureInfo.InvariantCulture),
-                (string)row.AssetClass,
-                double.Parse((string)row.EconomicCost, CultureInfo.InvariantCulture)
-            );
+                double.Parse((string)row.EconomicCost, CultureInfo.InvariantCulture),
+                assetClass);
             inventory.AddSecurity(security);
         }
 
         return inventory;
+    }
+    
+    public static List<Double> LoadHaircuts(string securitiesFileCsv)
+    {
+        CsvConfiguration configuration = new CsvConfiguration(
+            CultureInfo.InvariantCulture)
+        {
+            Delimiter = ",",
+            HasHeaderRecord = true
+        };
+
+        using StreamReader reader = new StreamReader(securitiesFileCsv);
+        using CsvReader csvReader = new CsvReader(reader, configuration);
+
+        List<Double> haircuts = new List<Double>();
+
+        foreach (var row in csvReader.GetRecords<dynamic>())
+        {
+            
+            haircuts.Add(double.Parse((string)row.Haircut, CultureInfo.InvariantCulture));
+        }
+
+        return haircuts;
     }
     
     public static List<Counterparty> LoadCounterparties(string counterpartiesFileCsv)
@@ -64,9 +96,12 @@ internal static class CsvDataLoader
         return counterparties;
     }
     
-    public static List<CollateralRequirement> LoadRequirements(string requirementsFileCsv, string counterpartiesFileCsv)
+    public static List<CollateralRequirement> LoadRequirements(string requirementsFileCsv, string? counterpartiesFileCsv = null)
     {
-        List<Counterparty> counterparties = LoadCounterparties(counterpartiesFileCsv);
+        List<Counterparty>? counterparties = counterpartiesFileCsv is not null
+            ? LoadCounterparties(counterpartiesFileCsv)
+            : null;
+        
         
         CsvConfiguration configuration = new CsvConfiguration(
             CultureInfo.InvariantCulture)
@@ -82,11 +117,19 @@ internal static class CsvDataLoader
 
         foreach (var row in csvReader.GetRecords<dynamic>())
         {
+            Counterparty counterparty = null;
+            if (counterparties is not null)
+            {
+                string counterpartyId = (string)row.CounterpartyId;
+                counterparty = counterparties?.FirstOrDefault(
+                    c => c.CounterpartyId == counterpartyId);
+            }
+            
+            
             requirements.Add(new CollateralRequirement(
                 (string)row.CollateralId,
                 double.Parse((string)row.CollateralValue, CultureInfo.InvariantCulture),
-                counterparties.First(c=> c.CounterpartyId == (string)row.CounterpartyId),
-                int.Parse((string)row.DurationDays, CultureInfo.InvariantCulture))
+                int.Parse((string)row.DurationDays, CultureInfo.InvariantCulture), counterparty)
             );
             
         }

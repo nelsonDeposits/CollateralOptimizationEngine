@@ -1,4 +1,0 @@
-﻿CounterpartyId,CounterpartyName,CounterpartyType,Currency
-CP_001,Bank Alpha,Bank,EUR
-CP_002,Euro Clearing House,CCP,EUR
-CP_003,Fund Gamma,Client,EUR

@@ -9,7 +9,7 @@ public class CollateralRequirement
     public int DurationDays { get; private set; }
     
 
-    public CollateralRequirement(String collateralId, Double collateralValue, Counterparty counterparty, int durationDays)
+    public CollateralRequirement(String collateralId, Double collateralValue, int durationDays, Counterparty? counterparty = null)
     {
         CollateralId = collateralId;
         CollateralValue = collateralValue;

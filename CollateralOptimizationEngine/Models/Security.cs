@@ -8,8 +8,9 @@ public class Security
     public String AssetClass { get; private set; }
     public String Currency { get; private set; }
     public Double EconomicCost { get; private set; }
+    
 
-    public Security(String id, String type, Double marketValue, String assetClass, Double economicCost)
+    public Security(String id, String type, Double marketValue, Double economicCost, String? assetClass=null)
     {
         SecurityId = id;    
         SecurityType = type;

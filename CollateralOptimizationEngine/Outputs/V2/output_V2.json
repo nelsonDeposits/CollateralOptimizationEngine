@@ -33,6 +33,7 @@
           "SecurityId": "FR001",
           "SecurityType": "Government Bond",
           "MarketValue": 6000000,
+          "AssetClass": null,
           "Currency": "EUR",
           "EconomicCost": 0.001
         },
@@ -40,6 +41,7 @@
           "SecurityId": "DE001",
           "SecurityType": "Government Bond",
           "MarketValue": 5000000,
+          "AssetClass": null,
           "Currency": "EUR",
           "EconomicCost": 0.0007
         },
@@ -47,6 +49,7 @@
           "SecurityId": "CORP1",
           "SecurityType": "Corporate Bond",
           "MarketValue": 1368421.0526315789,
+          "AssetClass": null,
           "Currency": "EUR",
           "EconomicCost": 0.0005
         },
@@ -54,8 +57,17 @@
           "SecurityId": "CORP2",
           "SecurityType": "Corporate Bond",
           "MarketValue": 3000000,
+          "AssetClass": null,
           "Currency": "EUR",
           "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "EQ001",
+          "SecurityType": "Equity",
+          "MarketValue": 0,
+          "AssetClass": null,
+          "Currency": "EUR",
+          "EconomicCost": 0.0002
         }
       ]
     }
@@ -92,6 +104,7 @@
           "SecurityId": "FR001",
           "SecurityType": "Government Bond",
           "MarketValue": 6000000,
+          "AssetClass": null,
           "Currency": "EUR",
           "EconomicCost": 0.001
         },
@@ -99,6 +112,7 @@
           "SecurityId": "DE001",
           "SecurityType": "Government Bond",
           "MarketValue": 2725388.601036269,
+          "AssetClass": null,
           "Currency": "EUR",
           "EconomicCost": 0.0007
         },
@@ -106,8 +120,25 @@
           "SecurityId": "CORP1",
           "SecurityType": "Corporate Bond",
           "MarketValue": 1368421.0526315789,
+          "AssetClass": null,
           "Currency": "EUR",
           "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CORP2",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 0,
+          "AssetClass": null,
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "EQ001",
+          "SecurityType": "Equity",
+          "MarketValue": 0,
+          "AssetClass": null,
+          "Currency": "EUR",
+          "EconomicCost": 0.0002
         }
       ]
     }
@@ -138,7 +169,9 @@
     "Allocations": {
       "FR001": 0,
       "DE001": 1752577.3195876293,
-      "CORP1": 1368421.0526315789
+      "CORP1": 1368421.0526315789,
+      "CORP2": 0,
+      "EQ001": 0
     },
     "UpdatedInventory": {
       "Securities": [
@@ -146,6 +179,7 @@
           "SecurityId": "FR001",
           "SecurityType": "Government Bond",
           "MarketValue": 6000000,
+          "AssetClass": null,
           "Currency": "EUR",
           "EconomicCost": 0.001
         },
@@ -153,8 +187,33 @@
           "SecurityId": "DE001",
           "SecurityType": "Government Bond",
           "MarketValue": 972811.2814486399,
+          "AssetClass": null,
           "Currency": "EUR",
           "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "CORP1",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 0,
+          "AssetClass": null,
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CORP2",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 0,
+          "AssetClass": null,
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "EQ001",
+          "SecurityType": "Equity",
+          "MarketValue": 0,
+          "AssetClass": null,
+          "Currency": "EUR",
+          "EconomicCost": 0.0002
         }
       ]
     }

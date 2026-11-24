@@ -1,0 +1,3453 @@
+[
+  {
+    "CollateralRequirement": {
+      "CollateralId": "REQ_001",
+      "CollateralValue": 12000000,
+      "Counterparty": {
+        "CounterpartyId": "CP_001",
+        "EligibleSecurities": {
+          "FR001": 0.02,
+          "FR002": 0.025,
+          "DE001": 0.03,
+          "DE002": 0.035,
+          "ES001": 0.025,
+          "CORP1": 0.05,
+          "CORP2": 0.06,
+          "CORP4": 0.05,
+          "CORP5": 0.065,
+          "CORP6": 0.06,
+          "EQ001": 0.1,
+          "EQ003": 0.11,
+          "EQ004": 0.13,
+          "CB001": 0.025,
+          "CB002": 0.03,
+          "CB003": 0.035,
+          "CB005": 0.03,
+          "SUP001": 0.015,
+          "SUP002": 0.02,
+          "SUP003": 0.025,
+          "AG001": 0.025,
+          "AG002": 0.03,
+          "AG004": 0.025
+        }
+      },
+      "Currency": "EUR",
+      "DurationDays": 30
+    },
+    "AllocationStatus": {
+      "Status": "SATISFIED",
+      "RequiredCollateral": 12000000,
+      "AllocatedCollateral": 12000000,
+      "RemainingRequirement": 0
+    },
+    "Allocations": {
+      "FR001": 0,
+      "FR002": 0,
+      "DE001": 0,
+      "DE002": 0,
+      "IT001": 0,
+      "ES001": 0,
+      "CORP1": 0,
+      "CORP2": 0,
+      "CORP3": 0,
+      "CORP4": 0,
+      "CORP5": 0,
+      "CORP6": 0,
+      "EQ001": 0,
+      "EQ002": 0,
+      "EQ003": 2500000,
+      "EQ004": 0,
+      "EQ005": 0,
+      "CB001": 14318.021546723321,
+      "CB002": 1537154.5659710772,
+      "CB003": 0,
+      "CB004": 0,
+      "CB005": 0,
+      "SUP001": 0,
+      "SUP002": 0,
+      "SUP003": 0,
+      "SUP004": 0,
+      "AG001": -1E-12,
+      "AG002": 3500000,
+      "AG003": 0,
+      "AG004": 5000000
+    },
+    "UpdatedInventory": {
+      "Securities": [
+        {
+          "SecurityId": "FR001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.001
+        },
+        {
+          "SecurityId": "FR002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "DE001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 7000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "DE002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "IT001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0012
+        },
+        {
+          "SecurityId": "ES001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0011
+        },
+        {
+          "SecurityId": "CORP1",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CORP2",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "CORP3",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CORP4",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 2500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "CORP5",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "CORP6",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "EQ001",
+          "SecurityType": "Common Stock",
+          "MarketValue": 4000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0002
+        },
+        {
+          "SecurityId": "EQ002",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "EQ003",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "EQ004",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "EQ005",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "CB001",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "CB002",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CB003",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "CB004",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CB005",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        },
+        {
+          "SecurityId": "SUP001",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00035
+        },
+        {
+          "SecurityId": "SUP002",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "SUP003",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00038
+        },
+        {
+          "SecurityId": "SUP004",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00042
+        },
+        {
+          "SecurityId": "AG001",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "AG002",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "AG003",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "AG004",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        }
+      ]
+    },
+    "TotalEconomicCost": 493.7516993901303
+  },
+  {
+    "CollateralRequirement": {
+      "CollateralId": "REQ_002",
+      "CollateralValue": 10000000,
+      "Counterparty": {
+        "CounterpartyId": "CP_002",
+        "EligibleSecurities": {
+          "FR001": 0.025,
+          "DE001": 0.035,
+          "DE002": 0.04,
+          "IT001": 0.045,
+          "ES001": 0.035,
+          "CORP2": 0.065,
+          "CORP3": 0.06,
+          "CORP4": 0.07,
+          "CORP6": 0.06,
+          "EQ002": 0.12,
+          "EQ003": 0.13,
+          "EQ005": 0.11,
+          "CB001": 0.03,
+          "CB003": 0.04,
+          "CB004": 0.045,
+          "CB005": 0.035,
+          "SUP001": 0.02,
+          "SUP002": 0.025,
+          "SUP004": 0.035,
+          "AG001": 0.03,
+          "AG002": 0.035,
+          "AG003": 0.04
+        }
+      },
+      "Currency": "EUR",
+      "DurationDays": 15
+    },
+    "AllocationStatus": {
+      "Status": "SATISFIED",
+      "RequiredCollateral": 10000000,
+      "AllocatedCollateral": 10000000,
+      "RemainingRequirement": 0
+    },
+    "Allocations": {
+      "FR001": 0,
+      "FR002": 0,
+      "DE001": 0,
+      "DE002": 4000000,
+      "IT001": 0,
+      "ES001": 0,
+      "CORP1": 0,
+      "CORP2": 0,
+      "CORP3": 4070813.6123168077,
+      "CORP4": 2500000,
+      "CORP5": 0,
+      "CORP6": 8973.621725747756,
+      "EQ001": 0,
+      "EQ002": 0,
+      "EQ003": 0,
+      "EQ004": 0,
+      "EQ005": 0,
+      "CB001": 0,
+      "CB002": 0,
+      "CB003": 0,
+      "CB004": 0,
+      "CB005": 0,
+      "SUP001": 0,
+      "SUP002": 0,
+      "SUP003": 0,
+      "SUP004": 0,
+      "AG001": 0,
+      "AG002": 0,
+      "AG003": 0,
+      "AG004": 0
+    },
+    "UpdatedInventory": {
+      "Securities": [
+        {
+          "SecurityId": "FR001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.001
+        },
+        {
+          "SecurityId": "FR002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "DE001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 7000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "DE002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "IT001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0012
+        },
+        {
+          "SecurityId": "ES001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0011
+        },
+        {
+          "SecurityId": "CORP1",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CORP2",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "CORP3",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CORP4",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 2500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "CORP5",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "CORP6",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "EQ001",
+          "SecurityType": "Common Stock",
+          "MarketValue": 4000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0002
+        },
+        {
+          "SecurityId": "EQ002",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "EQ003",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "EQ004",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "EQ005",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "CB001",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "CB002",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CB003",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "CB004",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CB005",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        },
+        {
+          "SecurityId": "SUP001",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00035
+        },
+        {
+          "SecurityId": "SUP002",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "SUP003",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00038
+        },
+        {
+          "SecurityId": "SUP004",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00042
+        },
+        {
+          "SecurityId": "AG001",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "AG002",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "AG003",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "AG004",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        }
+      ]
+    },
+    "TotalEconomicCost": 325.0235177893024
+  },
+  {
+    "CollateralRequirement": {
+      "CollateralId": "REQ_003",
+      "CollateralValue": 9000000,
+      "Counterparty": {
+        "CounterpartyId": "CP_003",
+        "EligibleSecurities": {
+          "FR002": 0.025,
+          "DE001": 0.03,
+          "IT001": 0.04,
+          "ES001": 0.03,
+          "CORP1": 0.05,
+          "CORP3": 0.055,
+          "CORP4": 0.065,
+          "CORP5": 0.06,
+          "EQ001": 0.1,
+          "EQ002": 0.11,
+          "EQ004": 0.13,
+          "EQ005": 0.11,
+          "CB001": 0.025,
+          "CB002": 0.03,
+          "CB004": 0.04,
+          "CB005": 0.03,
+          "SUP001": 0.015,
+          "SUP003": 0.025,
+          "SUP004": 0.03,
+          "AG001": 0.025,
+          "AG003": 0.035,
+          "AG004": 0.03
+        }
+      },
+      "Currency": "EUR",
+      "DurationDays": 45
+    },
+    "AllocationStatus": {
+      "Status": "SATISFIED",
+      "RequiredCollateral": 9000000,
+      "AllocatedCollateral": 9000000,
+      "RemainingRequirement": 0
+    },
+    "Allocations": {
+      "FR001": 0,
+      "FR002": 0,
+      "DE001": 0,
+      "DE002": 0,
+      "IT001": 0,
+      "ES001": 0,
+      "CORP1": 0,
+      "CORP2": 0,
+      "CORP3": 0,
+      "CORP4": 0,
+      "CORP5": 0,
+      "CORP6": 0,
+      "EQ001": 0,
+      "EQ002": 2000000,
+      "EQ003": 0,
+      "EQ004": 0,
+      "EQ005": 0,
+      "CB001": 0,
+      "CB002": 0,
+      "CB003": 0,
+      "CB004": 0,
+      "CB005": 0,
+      "SUP001": 3370558.3756345175,
+      "SUP002": 0,
+      "SUP003": 4000000,
+      "SUP004": 0,
+      "AG001": 0,
+      "AG002": 0,
+      "AG003": 0,
+      "AG004": 0
+    },
+    "UpdatedInventory": {
+      "Securities": [
+        {
+          "SecurityId": "FR001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.001
+        },
+        {
+          "SecurityId": "FR002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "DE001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 7000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "DE002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "IT001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0012
+        },
+        {
+          "SecurityId": "ES001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0011
+        },
+        {
+          "SecurityId": "CORP1",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CORP2",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "CORP3",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CORP4",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 2500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "CORP5",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "CORP6",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "EQ001",
+          "SecurityType": "Common Stock",
+          "MarketValue": 4000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0002
+        },
+        {
+          "SecurityId": "EQ002",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "EQ003",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "EQ004",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "EQ005",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "CB001",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "CB002",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CB003",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "CB004",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CB005",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        },
+        {
+          "SecurityId": "SUP001",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00035
+        },
+        {
+          "SecurityId": "SUP002",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "SUP003",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00038
+        },
+        {
+          "SecurityId": "SUP004",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00042
+        },
+        {
+          "SecurityId": "AG001",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "AG002",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "AG003",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "AG004",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        }
+      ]
+    },
+    "TotalEconomicCost": 412.46192893401013
+  },
+  {
+    "CollateralRequirement": {
+      "CollateralId": "REQ_004",
+      "CollateralValue": 8000000,
+      "Counterparty": {
+        "CounterpartyId": "CP_004",
+        "EligibleSecurities": {
+          "FR001": 0.035,
+          "DE001": 0.03,
+          "ES001": 0.035,
+          "CORP3": 0.055,
+          "CB001": 0.02,
+          "CB002": 0.025,
+          "CB003": 0.03,
+          "CB004": 0.035,
+          "CB005": 0.025,
+          "SUP001": 0.015,
+          "SUP002": 0.02,
+          "SUP003": 0.025
+        }
+      },
+      "Currency": "EUR",
+      "DurationDays": 30
+    },
+    "AllocationStatus": {
+      "Status": "SATISFIED",
+      "RequiredCollateral": 8000000,
+      "AllocatedCollateral": 8000000,
+      "RemainingRequirement": 0
+    },
+    "Allocations": {
+      "FR001": 0,
+      "FR002": 0,
+      "DE001": 0,
+      "DE002": 0,
+      "IT001": 0,
+      "ES001": 0,
+      "CORP1": 0,
+      "CORP2": 0,
+      "CORP3": 0,
+      "CORP4": 0,
+      "CORP5": 0,
+      "CORP6": 0,
+      "EQ001": 0,
+      "EQ002": 0,
+      "EQ003": 0,
+      "EQ004": 0,
+      "EQ005": 0,
+      "CB001": 0,
+      "CB002": 2462845.4340289226,
+      "CB003": 1248686.2905379387,
+      "CB004": 0,
+      "CB005": 4500000,
+      "SUP001": 0,
+      "SUP002": 0,
+      "SUP003": 0,
+      "SUP004": 0,
+      "AG001": 0,
+      "AG002": 0,
+      "AG003": 0,
+      "AG004": 0
+    },
+    "UpdatedInventory": {
+      "Securities": [
+        {
+          "SecurityId": "FR001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.001
+        },
+        {
+          "SecurityId": "FR002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "DE001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 7000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "DE002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "IT001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0012
+        },
+        {
+          "SecurityId": "ES001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0011
+        },
+        {
+          "SecurityId": "CORP1",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CORP2",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "CORP3",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CORP4",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 2500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "CORP5",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "CORP6",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "EQ001",
+          "SecurityType": "Common Stock",
+          "MarketValue": 4000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0002
+        },
+        {
+          "SecurityId": "EQ002",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "EQ003",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "EQ004",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "EQ005",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "CB001",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "CB002",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CB003",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "CB004",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CB005",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        },
+        {
+          "SecurityId": "SUP001",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00035
+        },
+        {
+          "SecurityId": "SUP002",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "SUP003",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00038
+        },
+        {
+          "SecurityId": "SUP004",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00042
+        },
+        {
+          "SecurityId": "AG001",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "AG002",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "AG003",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "AG004",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        }
+      ]
+    },
+    "TotalEconomicCost": 339.8500147341939
+  },
+  {
+    "CollateralRequirement": {
+      "CollateralId": "REQ_005",
+      "CollateralValue": 11000000,
+      "Counterparty": {
+        "CounterpartyId": "CP_005",
+        "EligibleSecurities": {
+          "DE001": 0.035,
+          "IT001": 0.04,
+          "CORP1": 0.025,
+          "CORP2": 0.03,
+          "CORP3": 0.035,
+          "CORP4": 0.04,
+          "CORP5": 0.03,
+          "CORP6": 0.035,
+          "CB001": 0.045,
+          "AG001": 0.025,
+          "AG002": 0.03,
+          "AG003": 0.035,
+          "AG004": 0.03
+        }
+      },
+      "Currency": "EUR",
+      "DurationDays": 60
+    },
+    "AllocationStatus": {
+      "Status": "SATISFIED",
+      "RequiredCollateral": 11000000,
+      "AllocatedCollateral": 11000000,
+      "RemainingRequirement": 0
+    },
+    "Allocations": {
+      "FR001": 0,
+      "FR002": 0,
+      "DE001": 0,
+      "DE002": 0,
+      "IT001": 0,
+      "ES001": 0,
+      "CORP1": 0,
+      "CORP2": 3000000,
+      "CORP3": 0,
+      "CORP4": 0,
+      "CORP5": 0,
+      "CORP6": 0,
+      "EQ001": 0,
+      "EQ002": 0,
+      "EQ003": 0,
+      "EQ004": 0,
+      "EQ005": 0,
+      "CB001": 3876963.35078534,
+      "CB002": 0,
+      "CB003": 0,
+      "CB004": 0,
+      "CB005": 0,
+      "SUP001": 0,
+      "SUP002": 0,
+      "SUP003": 0,
+      "SUP004": 0,
+      "AG001": 4500000,
+      "AG002": 0,
+      "AG003": 0,
+      "AG004": -1E-12
+    },
+    "UpdatedInventory": {
+      "Securities": [
+        {
+          "SecurityId": "FR001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.001
+        },
+        {
+          "SecurityId": "FR002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "DE001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 7000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "DE002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "IT001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0012
+        },
+        {
+          "SecurityId": "ES001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0011
+        },
+        {
+          "SecurityId": "CORP1",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CORP2",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "CORP3",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CORP4",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 2500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "CORP5",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "CORP6",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "EQ001",
+          "SecurityType": "Common Stock",
+          "MarketValue": 4000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0002
+        },
+        {
+          "SecurityId": "EQ002",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "EQ003",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "EQ004",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "EQ005",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "CB001",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "CB002",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CB003",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "CB004",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CB005",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        },
+        {
+          "SecurityId": "SUP001",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00035
+        },
+        {
+          "SecurityId": "SUP002",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "SUP003",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00038
+        },
+        {
+          "SecurityId": "SUP004",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00042
+        },
+        {
+          "SecurityId": "AG001",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "AG002",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "AG003",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "AG004",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        }
+      ]
+    },
+    "TotalEconomicCost": 828.2722513089004
+  },
+  {
+    "CollateralRequirement": {
+      "CollateralId": "REQ_006",
+      "CollateralValue": 7000000,
+      "Counterparty": {
+        "CounterpartyId": "CP_006",
+        "EligibleSecurities": {
+          "EQ001": 0.06,
+          "EQ002": 0.07,
+          "EQ003": 0.075,
+          "EQ004": 0.065,
+          "EQ005": 0.07,
+          "CB001": 0.025,
+          "CB002": 0.03,
+          "CB003": 0.035,
+          "CB004": 0.04,
+          "CB005": 0.03,
+          "SUP001": 0.04
+        }
+      },
+      "Currency": "EUR",
+      "DurationDays": 20
+    },
+    "AllocationStatus": {
+      "Status": "SATISFIED",
+      "RequiredCollateral": 7000000,
+      "AllocatedCollateral": 7000000,
+      "RemainingRequirement": 0
+    },
+    "Allocations": {
+      "FR001": 0,
+      "FR002": 0,
+      "DE001": 0,
+      "DE002": 0,
+      "IT001": 0,
+      "ES001": 0,
+      "CORP1": 0,
+      "CORP2": 0,
+      "CORP3": 0,
+      "CORP4": 0,
+      "CORP5": 0,
+      "CORP6": 0,
+      "EQ001": 0,
+      "EQ002": 0,
+      "EQ003": 0,
+      "EQ004": 3500000,
+      "EQ005": 0,
+      "CB001": 0,
+      "CB002": 0,
+      "CB003": 2251313.7094620615,
+      "CB004": 1619773.198301157,
+      "CB005": 0,
+      "SUP001": 0,
+      "SUP002": 0,
+      "SUP003": 0,
+      "SUP004": 0,
+      "AG001": 0,
+      "AG002": 0,
+      "AG003": 0,
+      "AG004": 0
+    },
+    "UpdatedInventory": {
+      "Securities": [
+        {
+          "SecurityId": "FR001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.001
+        },
+        {
+          "SecurityId": "FR002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "DE001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 7000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "DE002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "IT001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0012
+        },
+        {
+          "SecurityId": "ES001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0011
+        },
+        {
+          "SecurityId": "CORP1",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CORP2",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "CORP3",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CORP4",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 2500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "CORP5",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "CORP6",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "EQ001",
+          "SecurityType": "Common Stock",
+          "MarketValue": 4000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0002
+        },
+        {
+          "SecurityId": "EQ002",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "EQ003",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "EQ004",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "EQ005",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "CB001",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "CB002",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CB003",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "CB004",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CB005",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        },
+        {
+          "SecurityId": "SUP001",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00035
+        },
+        {
+          "SecurityId": "SUP002",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "SUP003",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00038
+        },
+        {
+          "SecurityId": "SUP004",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00042
+        },
+        {
+          "SecurityId": "AG001",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "AG002",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "AG003",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "AG004",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        }
+      ]
+    },
+    "TotalEconomicCost": 220.004803288046
+  },
+  {
+    "CollateralRequirement": {
+      "CollateralId": "REQ_007",
+      "CollateralValue": 5000000,
+      "Counterparty": {
+        "CounterpartyId": "CP_001",
+        "EligibleSecurities": {
+          "FR001": 0.02,
+          "FR002": 0.025,
+          "DE001": 0.03,
+          "DE002": 0.035,
+          "ES001": 0.025,
+          "CORP1": 0.05,
+          "CORP2": 0.06,
+          "CORP4": 0.05,
+          "CORP5": 0.065,
+          "CORP6": 0.06,
+          "EQ001": 0.1,
+          "EQ003": 0.11,
+          "EQ004": 0.13,
+          "CB001": 0.025,
+          "CB002": 0.03,
+          "CB003": 0.035,
+          "CB005": 0.03,
+          "SUP001": 0.015,
+          "SUP002": 0.02,
+          "SUP003": 0.025,
+          "AG001": 0.025,
+          "AG002": 0.03,
+          "AG004": 0.025
+        }
+      },
+      "Currency": "EUR",
+      "DurationDays": 45
+    },
+    "AllocationStatus": {
+      "Status": "SATISFIED",
+      "RequiredCollateral": 5000000,
+      "AllocatedCollateral": 5000000,
+      "RemainingRequirement": 0
+    },
+    "Allocations": {
+      "FR001": 0,
+      "FR002": 0,
+      "DE001": 0,
+      "DE002": 0,
+      "IT001": 0,
+      "ES001": 0,
+      "CORP1": 0,
+      "CORP2": 0,
+      "CORP3": 0,
+      "CORP4": 0,
+      "CORP5": 0,
+      "CORP6": 0,
+      "EQ001": 0,
+      "EQ002": 0,
+      "EQ003": 0,
+      "EQ004": 0,
+      "EQ005": 0,
+      "CB001": 0,
+      "CB002": 0,
+      "CB003": 0,
+      "CB004": 0,
+      "CB005": 0,
+      "SUP001": 1380710.6598984776,
+      "SUP002": 3714285.714285714,
+      "SUP003": 0,
+      "SUP004": 0,
+      "AG001": 0,
+      "AG002": 0,
+      "AG003": 0,
+      "AG004": 0
+    },
+    "UpdatedInventory": {
+      "Securities": [
+        {
+          "SecurityId": "FR001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.001
+        },
+        {
+          "SecurityId": "FR002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "DE001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 7000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "DE002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "IT001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0012
+        },
+        {
+          "SecurityId": "ES001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0011
+        },
+        {
+          "SecurityId": "CORP1",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CORP2",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "CORP3",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CORP4",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 2500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "CORP5",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "CORP6",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "EQ001",
+          "SecurityType": "Common Stock",
+          "MarketValue": 4000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0002
+        },
+        {
+          "SecurityId": "EQ002",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "EQ003",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "EQ004",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "EQ005",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "CB001",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "CB002",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CB003",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "CB004",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CB005",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        },
+        {
+          "SecurityId": "SUP001",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00035
+        },
+        {
+          "SecurityId": "SUP002",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "SUP003",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00038
+        },
+        {
+          "SecurityId": "SUP004",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00042
+        },
+        {
+          "SecurityId": "AG001",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "AG002",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "AG003",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "AG004",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        }
+      ]
+    },
+    "TotalEconomicCost": 246.12037708484414
+  },
+  {
+    "CollateralRequirement": {
+      "CollateralId": "REQ_008",
+      "CollateralValue": 6000000,
+      "Counterparty": {
+        "CounterpartyId": "CP_002",
+        "EligibleSecurities": {
+          "FR001": 0.025,
+          "DE001": 0.035,
+          "DE002": 0.04,
+          "IT001": 0.045,
+          "ES001": 0.035,
+          "CORP2": 0.065,
+          "CORP3": 0.06,
+          "CORP4": 0.07,
+          "CORP6": 0.06,
+          "EQ002": 0.12,
+          "EQ003": 0.13,
+          "EQ005": 0.11,
+          "CB001": 0.03,
+          "CB003": 0.04,
+          "CB004": 0.045,
+          "CB005": 0.035,
+          "SUP001": 0.02,
+          "SUP002": 0.025,
+          "SUP004": 0.035,
+          "AG001": 0.03,
+          "AG002": 0.035,
+          "AG003": 0.04
+        }
+      },
+      "Currency": "EUR",
+      "DurationDays": 30
+    },
+    "AllocationStatus": {
+      "Status": "SATISFIED",
+      "RequiredCollateral": 6000000,
+      "AllocatedCollateral": 6000000,
+      "RemainingRequirement": 0
+    },
+    "Allocations": {
+      "FR001": 0,
+      "FR002": 0,
+      "DE001": 0,
+      "DE002": 0,
+      "IT001": 0,
+      "ES001": 0,
+      "CORP1": 0,
+      "CORP2": 0,
+      "CORP3": 0,
+      "CORP4": 0,
+      "CORP5": 0,
+      "CORP6": 0,
+      "EQ001": 0,
+      "EQ002": 0,
+      "EQ003": 0,
+      "EQ004": 0,
+      "EQ005": 0,
+      "CB001": 1108718.6276679365,
+      "CB002": 0,
+      "CB003": 0,
+      "CB004": 0,
+      "CB005": 0,
+      "SUP001": 0,
+      "SUP002": 1285714.285714286,
+      "SUP003": 0,
+      "SUP004": 3500000,
+      "AG001": 0,
+      "AG002": 0,
+      "AG003": 305699.4818652845,
+      "AG004": 0
+    },
+    "UpdatedInventory": {
+      "Securities": [
+        {
+          "SecurityId": "FR001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.001
+        },
+        {
+          "SecurityId": "FR002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "DE001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 7000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "DE002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "IT001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0012
+        },
+        {
+          "SecurityId": "ES001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0011
+        },
+        {
+          "SecurityId": "CORP1",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CORP2",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "CORP3",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CORP4",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 2500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "CORP5",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "CORP6",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "EQ001",
+          "SecurityType": "Common Stock",
+          "MarketValue": 4000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0002
+        },
+        {
+          "SecurityId": "EQ002",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "EQ003",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "EQ004",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "EQ005",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "CB001",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "CB002",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CB003",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "CB004",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CB005",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        },
+        {
+          "SecurityId": "SUP001",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00035
+        },
+        {
+          "SecurityId": "SUP002",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "SUP003",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00038
+        },
+        {
+          "SecurityId": "SUP004",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00042
+        },
+        {
+          "SecurityId": "AG001",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "AG002",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "AG003",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "AG004",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        }
+      ]
+    },
+    "TotalEconomicCost": 220.94531764684936
+  },
+  {
+    "CollateralRequirement": {
+      "CollateralId": "REQ_009",
+      "CollateralValue": 7500000,
+      "Counterparty": {
+        "CounterpartyId": "CP_003",
+        "EligibleSecurities": {
+          "FR002": 0.025,
+          "DE001": 0.03,
+          "IT001": 0.04,
+          "ES001": 0.03,
+          "CORP1": 0.05,
+          "CORP3": 0.055,
+          "CORP4": 0.065,
+          "CORP5": 0.06,
+          "EQ001": 0.1,
+          "EQ002": 0.11,
+          "EQ004": 0.13,
+          "EQ005": 0.11,
+          "CB001": 0.025,
+          "CB002": 0.03,
+          "CB004": 0.04,
+          "CB005": 0.03,
+          "SUP001": 0.015,
+          "SUP003": 0.025,
+          "SUP004": 0.03,
+          "AG001": 0.025,
+          "AG003": 0.035,
+          "AG004": 0.03
+        }
+      },
+      "Currency": "EUR",
+      "DurationDays": 60
+    },
+    "AllocationStatus": {
+      "Status": "SATISFIED",
+      "RequiredCollateral": 7500000,
+      "AllocatedCollateral": 7500000,
+      "RemainingRequirement": 0
+    },
+    "Allocations": {
+      "FR001": 0,
+      "FR002": 0,
+      "DE001": 0,
+      "DE002": 0,
+      "IT001": 0,
+      "ES001": 0,
+      "CORP1": 0,
+      "CORP2": 0,
+      "CORP3": 0,
+      "CORP4": 0,
+      "CORP5": 0,
+      "CORP6": 0,
+      "EQ001": 4000000,
+      "EQ002": 1000000,
+      "EQ003": 0,
+      "EQ004": 0,
+      "EQ005": 2000000,
+      "CB001": 0,
+      "CB002": 0,
+      "CB003": 0,
+      "CB004": 0,
+      "CB005": 0,
+      "SUP001": 1248730.964467005,
+      "SUP002": 0,
+      "SUP003": 0,
+      "SUP004": 0,
+      "AG001": 0,
+      "AG002": 0,
+      "AG003": 0,
+      "AG004": 0
+    },
+    "UpdatedInventory": {
+      "Securities": [
+        {
+          "SecurityId": "FR001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.001
+        },
+        {
+          "SecurityId": "FR002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "DE001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 7000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "DE002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "IT001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0012
+        },
+        {
+          "SecurityId": "ES001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0011
+        },
+        {
+          "SecurityId": "CORP1",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CORP2",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "CORP3",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CORP4",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 2500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "CORP5",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "CORP6",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "EQ001",
+          "SecurityType": "Common Stock",
+          "MarketValue": 4000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0002
+        },
+        {
+          "SecurityId": "EQ002",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "EQ003",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "EQ004",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "EQ005",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "CB001",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "CB002",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CB003",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "CB004",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CB005",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        },
+        {
+          "SecurityId": "SUP001",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00035
+        },
+        {
+          "SecurityId": "SUP002",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "SUP003",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00038
+        },
+        {
+          "SecurityId": "SUP004",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00042
+        },
+        {
+          "SecurityId": "AG001",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "AG002",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "AG003",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "AG004",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        }
+      ]
+    },
+    "TotalEconomicCost": 356.17597292724196
+  },
+  {
+    "CollateralRequirement": {
+      "CollateralId": "REQ_010",
+      "CollateralValue": 9000000,
+      "Counterparty": {
+        "CounterpartyId": "CP_004",
+        "EligibleSecurities": {
+          "FR001": 0.035,
+          "DE001": 0.03,
+          "ES001": 0.035,
+          "CORP3": 0.055,
+          "CB001": 0.02,
+          "CB002": 0.025,
+          "CB003": 0.03,
+          "CB004": 0.035,
+          "CB005": 0.025,
+          "SUP001": 0.015,
+          "SUP002": 0.02,
+          "SUP003": 0.025
+        }
+      },
+      "Currency": "EUR",
+      "DurationDays": 15
+    },
+    "AllocationStatus": {
+      "Status": "SATISFIED",
+      "RequiredCollateral": 9000000,
+      "AllocatedCollateral": 9000000,
+      "RemainingRequirement": 0
+    },
+    "Allocations": {
+      "FR001": 0,
+      "FR002": 0,
+      "DE001": 7000000,
+      "DE002": 0,
+      "IT001": 0,
+      "ES001": 0,
+      "CORP1": 0,
+      "CORP2": 0,
+      "CORP3": 929186.3876831922,
+      "CORP4": 0,
+      "CORP5": 0,
+      "CORP6": 0,
+      "EQ001": 0,
+      "EQ002": 0,
+      "EQ003": 0,
+      "EQ004": 0,
+      "EQ005": 0,
+      "CB001": 0,
+      "CB002": 0,
+      "CB003": 0,
+      "CB004": 1380226.801698843,
+      "CB005": 0,
+      "SUP001": 0,
+      "SUP002": 0,
+      "SUP003": 0,
+      "SUP004": 0,
+      "AG001": 0,
+      "AG002": 0,
+      "AG003": 0,
+      "AG004": 0
+    },
+    "UpdatedInventory": {
+      "Securities": [
+        {
+          "SecurityId": "FR001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.001
+        },
+        {
+          "SecurityId": "FR002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "DE001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 7000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "DE002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "IT001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0012
+        },
+        {
+          "SecurityId": "ES001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0011
+        },
+        {
+          "SecurityId": "CORP1",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CORP2",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "CORP3",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CORP4",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 2500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "CORP5",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "CORP6",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "EQ001",
+          "SecurityType": "Common Stock",
+          "MarketValue": 4000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0002
+        },
+        {
+          "SecurityId": "EQ002",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "EQ003",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "EQ004",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "EQ005",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "CB001",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "CB002",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CB003",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "CB004",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CB005",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        },
+        {
+          "SecurityId": "SUP001",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00035
+        },
+        {
+          "SecurityId": "SUP002",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "SUP003",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00038
+        },
+        {
+          "SecurityId": "SUP004",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00042
+        },
+        {
+          "SecurityId": "AG001",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "AG002",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "AG003",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "AG004",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        }
+      ]
+    },
+    "TotalEconomicCost": 261.90199640121756
+  },
+  {
+    "CollateralRequirement": {
+      "CollateralId": "REQ_011",
+      "CollateralValue": 6500000,
+      "Counterparty": {
+        "CounterpartyId": "CP_005",
+        "EligibleSecurities": {
+          "DE001": 0.035,
+          "IT001": 0.04,
+          "CORP1": 0.025,
+          "CORP2": 0.03,
+          "CORP3": 0.035,
+          "CORP4": 0.04,
+          "CORP5": 0.03,
+          "CORP6": 0.035,
+          "CB001": 0.045,
+          "AG001": 0.025,
+          "AG002": 0.03,
+          "AG003": 0.035,
+          "AG004": 0.03
+        }
+      },
+      "Currency": "EUR",
+      "DurationDays": 30
+    },
+    "AllocationStatus": {
+      "Status": "SATISFIED",
+      "RequiredCollateral": 6500000,
+      "AllocatedCollateral": 6500000,
+      "RemainingRequirement": 0
+    },
+    "Allocations": {
+      "FR001": 0,
+      "FR002": 0,
+      "DE001": 0,
+      "DE002": 0,
+      "IT001": 0,
+      "ES001": 0,
+      "CORP1": 4000000,
+      "CORP2": 0,
+      "CORP3": 0,
+      "CORP4": 0,
+      "CORP5": 0,
+      "CORP6": 0,
+      "EQ001": 0,
+      "EQ002": 0,
+      "EQ003": 0,
+      "EQ004": 0,
+      "EQ005": 0,
+      "CB001": 0,
+      "CB002": 0,
+      "CB003": 0,
+      "CB004": 0,
+      "CB005": 0,
+      "SUP001": 0,
+      "SUP002": 0,
+      "SUP003": 0,
+      "SUP004": 0,
+      "AG001": 0,
+      "AG002": 0,
+      "AG003": 2694300.5181347155,
+      "AG004": 0
+    },
+    "UpdatedInventory": {
+      "Securities": [
+        {
+          "SecurityId": "FR001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.001
+        },
+        {
+          "SecurityId": "FR002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "DE001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 7000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "DE002",
+          "SecurityType": "Government Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "IT001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0012
+        },
+        {
+          "SecurityId": "ES001",
+          "SecurityType": "Government Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Sovereign",
+          "Currency": "EUR",
+          "EconomicCost": 0.0011
+        },
+        {
+          "SecurityId": "CORP1",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CORP2",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "CORP3",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CORP4",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 2500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0007
+        },
+        {
+          "SecurityId": "CORP5",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0008
+        },
+        {
+          "SecurityId": "CORP6",
+          "SecurityType": "Corporate Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Corporate",
+          "Currency": "EUR",
+          "EconomicCost": 0.0009
+        },
+        {
+          "SecurityId": "EQ001",
+          "SecurityType": "Common Stock",
+          "MarketValue": 4000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0002
+        },
+        {
+          "SecurityId": "EQ002",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "EQ003",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "EQ004",
+          "SecurityType": "Common Stock",
+          "MarketValue": 3500000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "EQ005",
+          "SecurityType": "Common Stock",
+          "MarketValue": 2000000,
+          "AssetClass": "Equity",
+          "Currency": "EUR",
+          "EconomicCost": 0.0003
+        },
+        {
+          "SecurityId": "CB001",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "CB002",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "CB003",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "CB004",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.0006
+        },
+        {
+          "SecurityId": "CB005",
+          "SecurityType": "Covered Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Covered Bond",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        },
+        {
+          "SecurityId": "SUP001",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 6000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00035
+        },
+        {
+          "SecurityId": "SUP002",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.0004
+        },
+        {
+          "SecurityId": "SUP003",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 4000000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00038
+        },
+        {
+          "SecurityId": "SUP004",
+          "SecurityType": "Supranational Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Supranational",
+          "Currency": "EUR",
+          "EconomicCost": 0.00042
+        },
+        {
+          "SecurityId": "AG001",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 4500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00045
+        },
+        {
+          "SecurityId": "AG002",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3500000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.0005
+        },
+        {
+          "SecurityId": "AG003",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 3000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00055
+        },
+        {
+          "SecurityId": "AG004",
+          "SecurityType": "Agency Bond",
+          "MarketValue": 5000000,
+          "AssetClass": "Agency",
+          "Currency": "EUR",
+          "EconomicCost": 0.00048
+        }
+      ]
+    },
+    "TotalEconomicCost": 290.1554404145078
+  }
+]
